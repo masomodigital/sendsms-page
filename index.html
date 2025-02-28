@@ -51,15 +51,17 @@
             color: green;
             margin-top: 10px;
         }
-        .blinking-text {
-            font-weight: bold;
-            color: red;
+        .marquee-container {
+            background-color: black;
+            padding: 10px;
+            color: white;
             font-size: 20px;
-            margin-top: 20px;
-            animation: blink 1s infinite;
+            font-weight: bold;
         }
-        @keyframes blink {
-            50% { opacity: 0; }
+        marquee {
+            behavior: scroll;
+            direction: left;
+            scrollamount: 3; /* Slow speed */
         }
     </style>
 </head>
@@ -73,7 +75,9 @@
         <a href="https://docs.google.com/forms/d/e/1FAIpQLScRVe5c2nD94A8NuqEcVL5o6f7RWj-e1drrRbVO-k99b4d4mw/viewform" class="btn red-btn">Monthly Plan</a>
         <p class="info-text">In Monthly Plan, you send 5 FREE SMS daily for a period of 1 month (30 days). You also make money by signing up other users.</p>
     </div>
-
-    <p class="blinking-text">Send FREE SMS with Masomo Digital Library!!</p>
+    
+    <div class="marquee-container">
+        <marquee>Send FREE SMS with Masomo Digital Library!!</marquee>
+    </div>
 </body>
 </html>
